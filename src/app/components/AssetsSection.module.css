@@ -1,0 +1,12 @@
+.galleryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.galleryContainer img {
+  height: 250px; /* Lock all images to this consistent height */
+  flex-grow: 1; /* Allow width to expand to fill space */
+  object-fit: cover;
+  width: auto; /* Prevent distortion */
+}
