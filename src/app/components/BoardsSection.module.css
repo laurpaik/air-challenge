@@ -1,0 +1,13 @@
+.boardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-direction: row;
+  /* justify-content: space-between; */
+}
+.boardContainer img {
+  height: 200px; /* Lock all images to this consistent height */
+  /* flex-shrink: 1; Allow width to expand to fill space */
+  object-fit: cover;
+  width: 200px; /* Prevent distortion */
+}

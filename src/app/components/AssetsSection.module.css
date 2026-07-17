@@ -1,0 +1,36 @@
+.galleryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* width: "100%";
+  margin-left: "auto";
+  margin-right: "auto";
+  padding: 2px; */
+}
+
+.asset img {
+  height: 250px; /* Lock all images to this consistent height */
+  flex-grow: 1; /* Allow width to expand to fill space */
+  object-fit: cover;
+  width: auto; /* Prevent distortion */
+}
+
+.asset img:hover {
+  opacity: 0.5;
+}
+.asset [draggable="true"] {
+  cursor: grab;
+}
+
+.asset [draggable="true"]:active {
+  cursor: grabbing;
+}
+.dragging {
+  opacity: 0.5;
+  border: 2px solid blue;
+}
+
+.dragOver {
+  background-color: #e0f7fa;
+  border: 1px solid red;
+}
