@@ -57,10 +57,10 @@ export default function IconMenu() {
           </Typography>
         </MenuItem>
         {options.map((option) => (
-          <MenuItem>
-            <ListItemIcon>
+          <MenuItem key={option.action}>
+            {/* <ListItemIcon>
               <Icon fontSize="small" component={option.icon} />
-            </ListItemIcon>
+            </ListItemIcon> */}
             <ListItemText>{option.copy}</ListItemText>
           </MenuItem>
         ))}
