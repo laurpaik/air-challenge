@@ -4,9 +4,9 @@ import AssetSection from "./components/AssetsSection";
 import { fetchBoards } from "./api/boards";
 import BoardSection from "./components/BoardsSection";
 
-export const getClips = async (cursor = null) =>
+const getClips = async (cursor = null) =>
   await fetchAssets({ cursor }).then((res) => res);
-export const getBoards = async () => await fetchBoards();
+const getBoards = async () => await fetchBoards();
 
 export default async function Home() {
   const { data: boards, total: boardTotal } = await getBoards();
